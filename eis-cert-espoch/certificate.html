@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <title>eis-cert-espoch - Certificate</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="/images/ico.png"> 
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/css/tether.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/devcss.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <script src="//code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="//code.jquery.com/ui/1.12.0/jquery-ui.min.js" crossorigin="anonymous"></script>
+    <script defer src="//use.fontawesome.com/releases/v5.0.9/js/all.js" crossorigin="anonymous"></script>
+    <script src="//cdn.rawgit.com/ricmoo/aes-js/e27b99df/index.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+    <script src="js/certificate.js"></script>
+</head>
+<body class="layout-accomplishment view-valid-accomplishment ltr is-idverified certificate certificate-verified" data-view="valid-accomplishment">
+    <div class="wrapper-view" dir="ltr" id="certificado" style="display:none">
+        <div class="wrapper-header">
+            <header class="header-app" role="banner">
+                <h1 class="header-app-title">
+                    <img id="logo" src="/images/logo.png" alt="logo">
+                    <span class="sr-only">Certificado eis-cert-espoch</span>
+                </h1>
+            </header>
+        </div>
+        <hr class="divider sr-only">
+        <main class="accomplishment accomplishment-main">
+            <div class="wrapper-accomplishment-rendering">
+                <div class="accomplishment-rendering">
+                    <div class="wrapper-accomplishment-title verified">
+                        <h2 class="accomplishment-title">
+                            <span class="accomplishment-title-label">VERIFICADO</span>
+                            <span class="accomplishment-title-type" id="courseCertificated"></span>
+                        </h2>
+                        <div class="wrapper-accomplishment-orgs">
+                            <h3 class="accomplishment-orgs-title sr-only">Con el apoyo de las siguientes organizaciones</h3>
+                            <ul class="wrapper-orgs list-orgs">
+                                <li class="wrapper-organization">
+                                    <div class="organization">
+                                        <img id="logo" src="/images/logo.png" alt="logo">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="wrapper-accomplishment-statement">
+                        <div class="accomplishment-statement">
+                            <p class="accomplishment-statement-lead">
+                                <span class="accomplishment-statement-detail copy">Se certifica que:</span>
+                                <strong class="accomplishment-recipient" id="alumnName"></strong>
+                                <span class="accomplishment-summary copy">Ha realizado con éxito el curso:</span>
+                                <span class="accomplishment-course">
+                                    <span class="accomplishment-course-name" id="courseName"></span>
+                                </span>
+                                <span class="accomplishment-statement-detail copy" id="courseDate"></span></span>                            </p>
+                        </div>
+                        <div class="accomplishment-signatories">
+                            <h3 class="accomplishment-signatories-title sr-only">Anotado por:</h3>
+                            <div class="wrapper-signatories">
+                                <div class="list-signatories">
+                                    <div class="signatory">
+                                        <span class="accomplishment-statement-detail copy">Firmado por:</span>
+                                        <img id="firma1" class="signatory-signature" src="/images/firma1.png" alt="firma1">
+                                    </div>
+                                    <div class="signatory">
+                                        <img id="firma2" class="signatory-signature" src="/images/firma2.png" alt="firma2">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper-accomplishment-stamps">
+                        <ul class="accomplishment-stamps copy-list">
+                            <li class="accomplishment-stamp-platform">
+                                <img id="certified" class="logo-img" src="/images/certified.png" alt="certified">
+                            </li>
+                            <li class="accomplishment-stamp-date">
+                            </li>
+                            <li class="accomplishment-stamp-platform">
+                                <img id="Blockchain" class="logo-img" src="/images/Blockchain.png" alt="Blockchain">
+                            </li>
+                            <li class="accomplishment-stamp-validity">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper-accomplishment-metadata">
+                <div class="accomplishment-metadata">
+                </div>
+            </div>
+        </main>
+        <hr class="divider sr-only">
+        <div class="wrapper-footer">
+            <footer class="footer-app" role="contentinfo" id="company-info">
+                <div class="footer-app-legal">
+                    <nav class="footer-app-nav">
+                        <ul class="list list-legal">
+                            <li class="nav-item">
+                                <a class="action" href="#">Print PDF: Ctrl + P</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-app-related">
+                    <img id="logo" src="/images/logo.png" alt="logo">
+                </div>
+            </footer>
+        </div>
+    </div>
+    <div id="myModalVerified" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>
+                    <div class="glyphicon glyphicon-ok"></div>
+                    Certificado validado correctamente por:    
+                </h2>
+            </div>
+            <div class="modal-body">
+                <h3 id="server"> </h3>
+            </div>
+        </div>
+    </div>
+    <div id="myModalNotVerified" class="modal">
+        <div class="modal-content modal-header-error">
+            <div class="modal-header-error">
+                <span class="close">&times;</span>
+                <h2>
+                    <div class="glyphicon glyphicon-warning-sign"></div>
+                    Este certificado no existe.   
+                </h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+/* Fondo de eis-cert-espoch */
+body {
+background: #f1f4f7 !important;
+}
+
+/* Tipo de fuente de eis-cert-espoch */
+body {
+font-family: sans-serif !important;
+}
+
+/* Dimensiones de fuente  de eis-cert-espoch */
+body {
+font-size: 14px;
+}
+
+/* Color (cabeceras, botones, etc) */
+.btn-primary, .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary, .btn-primary.disabled, .btn-primary[disabled], fieldset[disabled], .btn-primary, .btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled], .btn-primary:hover, .btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled], .btn-primary:focus, .btn-primary.disabled:active, .btn-primary[disabled]:active, fieldset[disabled], .btn-primary:active, .btn-primary.disabled.active, .btn-primary[disabled].active, fieldset[disabled], .btn-primary.active, .bg-info, .bg-blue a.bg-info:hover, a.bg-blue:hover, .label-info, .label-info[href]:hover, .label-info[href]:focus, .panel-primary > .panel-heading, .panel-info > .panel-heading, .timeline-badge.primary, .timeline-badge.info, .progress-bar, .progress-bar-info, .progress-bar-blue, .sidebar ul.nav a:hover, .sidebar ul.nav li.parent ul li a:hover, .sidebar ul.nav, .active a, .sidebar ul.nav li.parent a.active, .sidebar ul.nav, .active > a:hover, .sidebar ul.nav li.parent a.active:hover, .sidebar ul.nav, .active > a:focus, .sidebar ul.nav li.parent a.active:focus, .sidebar ul.nav li.current a, .datepicker table tr td.active, .datepicker table tr td.active:hover, .datepicker table tr td.active.disabled, .datepicker table tr td.active.disabled:hover, .datepicker table tr td.active:hover, .datepicker table tr td.active:hover:hover, .datepicker table tr td.active.disabled:hover, .datepicker table tr td.active.disabled:hover:hover, .datepicker table tr td.active:focus, .datepicker table tr td.active:hover:focus, .datepicker table tr td.active.disabled:focus, .datepicker table tr td.active.disabled:hover:focus, .datepicker table tr td.active:active, .datepicker table tr td.active:hover:active, .datepicker table tr td.active.disabled:active, .datepicker table tr td.active.disabled:hover:active, .datepicker table tr td.active.active, .datepicker table tr td.active:hover.active, .datepicker table tr td.active.disabled.active, .datepicker table tr td.active.disabled:hover.active, .open, .dropdown-toggle.datepicker table tr td.active, .open, .dropdown-toggle.datepicker table tr td.active:hover, .open, .dropdown-toggle.datepicker table tr td.active.disabled, .open, .dropdown-toggle.datepicker table tr td.active.disabled:hover  {
+background-color: #4fe907 !important;
+}
+
+/* Dimensiones logo.png */
+#logo {
+    width: 305px !important; 
+    height: 85px !important;
+}
+
+/* Dimensiones firma1.png */
+#firma1 {
+    width: 100% !important; 
+    height: 100% !important;
+}
+
+/* Dimensiones firma2.png */
+#firma2 {
+    width: 100% !important; 
+    height: 100% !important;
+}
+
+/* Dimensiones certified.png */
+#certified {
+    width: 100% !important; 
+    height: 100% !important;
+}
+
+/* TamaÃ±o Blockchain.png */
+#Blockchain {
+    width: 100% !important; 
+    height: 100% !important;
+}
+
+/* Dimensiones verified-seal-grayscale.png */
+#verified-seal-grayscale {
+    width: 100% !important; 
+    height: 100% !important;
+}
